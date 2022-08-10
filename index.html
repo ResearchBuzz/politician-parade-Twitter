@@ -113,14 +113,14 @@ const result = new Array(Math.ceil(Bitems.length / n))
   console.log(resultlength)
   resultstart = 0
 var Bdiv = document.getElementById("Bpol")
-Bdiv.innerHTML = "<h4>News search for representatives from both parties:</h4>"  
+Bdiv.innerHTML = "<h4>TwitterSpace search for representatives from both parties:</h4>"  
 while (resultstart < resultlength) {
 var BitemsString = result[resultstart]
 var BitemsURL = BitemsString.join("%20OR%20")
 var BitemsURL = "("+BitemsURL+")"
 var resultsm = resultstart+1
 var BitemsQ = search_url+BitemsURL
-var BitemsQCount = "Google News - Congressional Rep Group"+resultsm+"  (click to open or right-click to open in new tab) <br>"
+var BitemsQCount = "TwitterSpace - Congressional Rep Group"+resultsm+"  (click to open or right-click to open in new tab) <br>"
 var BitemsQ = BitemsQCount.link(BitemsQ)
 console.log(BitemsQ)
 
