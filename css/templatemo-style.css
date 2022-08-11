@@ -79,9 +79,9 @@ p { line-height: 2; }
 	color: white;
 }
 
-.tm-nav-item:link a,
-.tm-nav-item:active a,
-.tm-nav-item:focus a,
+.tm-nav-item:link a:link,
+.tm-nav-item:active a:link,
+.tm-nav-item:focus a:link,
 .tm-nav-item-link.active {
 	color: #f4ef5e;
 }
