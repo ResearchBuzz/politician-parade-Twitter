@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Fixed Width 1 Blue</title>
+		<title>ResearchBuzz Search Gizmos: Politician Parade Twitter</title>
 		<style type="text/css">
 			html, #page { padding:0; margin:0;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
@@ -14,7 +14,7 @@
 			/* Logo */
 			#logo { padding:0; width:auto; float:left;}
 			#logo h1 a, h1 a:hover { color:darkblue; text-decoration:none;}
-			#logo h1 span { color:#d3d3f9;}
+			#logo h1 span { color:#24592c;}
 
 			/* Header */
 			#header { background:#fff; }
@@ -23,7 +23,7 @@
 			/* Feature */
 			.feature { background:blue;padding:18px;}
 			.feature-inner { margin:auto;width:970px; }
-			.feature-inner h1 {color:#d3d3f9;font-size:32px;}
+			.feature-inner h1 {color:#E9E9FC;font-size:32px;}
 			
 			/* Menu */
 			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
@@ -35,14 +35,14 @@
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
 			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
-			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
-			#content #sidebar { padding:0; float:left; width:200px;}
+			#content #contentbar .article {  font-size: 1.25em; color: black; margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #sidebar { background-color:#ECFFDC; padding:0; float:left; width:200px;}
 			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
 			#content #sidebar .widget h3 a { text-decoration:none;}
 			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
 			#content #sidebar .widget ul li { margin:0;}
 			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
-			#content #sidebar .widget ul li a { color:blue; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a {font-size: 1.25em; color:black; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
 			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
 			
 			/* Footerblurb */
@@ -66,14 +66,13 @@
 			<header id="header">
 				<div id="header-inner">	
 					<div id="logo">
-						<h1><a href="#">Cool<span>Logo</span></a></h1>
+						<h1><a href="#">ResearchBuzz<span>Search Gizmos</span></a></h1>
 					</div>
 					<div id="top-nav">
 						<ul>
-						<li><a href="http://www.researchBuzz.com">ResearchBuzz</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Help</a></li>
+						<li><a href="https://github.com/ResearchBuzz">ResearchBuzz GitHub Home</a></li>
+						<li><a href="https://www.researchbuzz.me">ResearchBuzz Main Site</a></li>
+						<li><a href="https://www.rbfirehose.com">ResearchBuzz Firehose</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -81,7 +80,7 @@
 			</header>
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>Heading</h1>
+				<h1>Politician Parade Twitter: <br><br>Find Congressional Representatives in Twitter Space </h1>
 				</div>
 			</div>
 		
@@ -93,23 +92,26 @@
 						<div class="article">
 							
 
-<h2>Find Congressional Representatives in Twitter Space: Politician Parade</h2>
+<h2></h2>
 
 <h3>
-    Politician Parade adds a state's Congresspeople to your news or Web search. Depending on how many reps your state has, this tool will generate one or more URLs with your query AND your Congressional representatives added as an "or" array.
-  </h3>
+    Politician Parade adds a state's Congresspeople to your Twitter search. Specify a query and a state, and Politician Parade will create a Twitter search limited to the Twitter accounts of that state's House of Representatives members.<br><br> Because some states have lots of reps (California, Florida, Texas), they require multiple search queries. The generated queries appear underneath the "Parade them Politicians!" button. <br><br></h3>
   
-   <label>Query:</label>
+   <label><b>Query:</b></label>
   <input type="text" class="searchq" value="medicare"><br><br>
 
-  <label>State: (Please use two-letter postal code)</label>
+  <label><b>State:</b> <i>(Please use two-letter postal code)</i></label>
   <input type="text" class="state" size="2" maxlength="2" value="IA"><br><br>
 
-  <label>ProPublica API Key</label><br><br>
-  <i>You'll need an API Key to use this tool. You can get them free from https://www.propublica.org/datastore/api/propublica-congress-api .</i><br><br>
-  <input type="text" class="apikey" value="bvsqpoZ3uMtssGByPJz3CkYEi5EjA51jXNmYBgHA"><br><br>
 
-<button onclick="Parade()">Parade them Politicians!</button><br><br>
+  <label><b>ProPublica API Key:</b></label>  <input type="text" class="apikey" size="20" value="Paste API key here"><br><br>
+  <i>You'll need an API Key to use this tool. You can get them free from <a href="https://www.propublica.org/datastore/api/propublica-congress-api">https://www.propublica.org/datastore/api/propublica-congress-api</a> .</i><br><br>
+ 
+
+
+<button onclick="Parade()">Parade them Politicians!</button><br>
+
+<h4>Please note that you can either click these links to open the page in the same tab or right-click them to open in a new window. When you right click them you tend to get fewer results. I'm not sure why and I'm trying to figure it out. If you get fewer results than you'd expect, reload the Twitter results page.</h4>
 
 <div id="Bpol"> 
 
@@ -130,13 +132,18 @@
 					
 					<nav id="sidebar">
 						<div class="widget">
-							<h3>Left heading</h3>
+							<h3>ResearchBuzz Search Gizmos</h3>
 							<ul>
-							<li><a href="#">Link 1</a></li>
-							<li><a href="#">Link 2</a></li>
-							<li><a href="#">Link 3</a></li>
-							<li><a href="#">Link 4</a></li>
-							<li><a href="#">Link 5</a></li>
+							<li><a href="https://researchbuzz.github.io/politician-parade-Twitter/">Politician Parade: Twitter</a></li>
+							<li><a href="https://researchbuzz.github.io/politician-parade/">Politician Parade: Google News</a></li>
+							<li><a href="https://researchbuzz.github.io/Time-Sliced-News-Search/">Time-Sliced News Search</a></li>
+							<li><a href="https://researchbuzz.github.io/Kebberfegg/">Kebberfegg RSS Feed Generator</a></li>
+							<li><a href="https://researchbuzz.github.io/blogspace-time-machine/">Blogspace Time Machine</a></li>
+<li><a href="https://researchbuzz.github.io/Blog-Shovel/">Blog Shovel</a></li>
+<li><a href="https://researchbuzz.github.io/sinker-search/">Sinker Search</a></li>
+<li><a href="https://researchbuzz.github.io/The-Anti-Bullseye-Name-Search/">The Anti-Bullseye Name Search</a></li>
+<li><a href="https://researchbuzz.github.io/Back-That-Ask-Up-/">Back That Ask Up</a></li>
+<li><a href="https://researchbuzz.github.io/Twitter-Receipts/">Twitter Receipts</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -149,16 +156,16 @@
 				<div id="footerblurb-inner">
 				
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						<h2><span>What Is This?</span></h2>
+						<p>The RB Gizmos are a collection of search tools made with JavaScript and HTML.</p>
 					</div>	
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						<h2><span>Why Is This?</span></h2>
+						<p>Because I've been writing about searching and search engines since 1996 and I'm obsessed with them.</p>
 					</div>
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						<h2> </h2>
+						<p><script> </script></p>
 					</div>	
 					
 					<div class="clr"></div>
@@ -166,7 +173,7 @@
 			</div>
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
+					
 					<div class="clr"></div>
 				</div>
 			</footer>
@@ -191,7 +198,7 @@ function Parade(){
 
     var api_url = "https://api.propublica.org/congress/v1/members/house/"+state+"/current.json"
      
-    var search_url = "https://twitter.com/search?f=live&q="+searchq+"+"
+    var search_url = "https://twitter.com/search?f=live&scr=typed+query&q="+searchq+"+"
 
 
     // Empty arrays for processing API data
@@ -264,8 +271,8 @@ var BitemsURL = BitemsString.join("%20OR%20")
 var BitemsURL = "("+BitemsURL+")"
 var resultsm = resultstart+1
 var BitemsQ = search_url+BitemsURL
-var BitemsQCount = "Google News - Congressional Rep Group"+resultsm+"  (click to open or right-click to open in new tab) <br>"
-var BitemsQ = BitemsQCount.link(BitemsQ)
+var BitemsQCount = "Twitter Search for "+state+" - Congressional Rep Group"+resultsm+"  (click to open) <br>"
+var BitemsQ = "<a href=\""+BitemsQ+"\">"+BitemsQCount+"</a>"
 console.log(BitemsQ)
 
 Bdiv.innerHTML = Bdiv.innerHTML + BitemsQ + "<br><br>"
