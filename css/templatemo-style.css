@@ -13,6 +13,10 @@ body {
 }
 
 a:link
+{
+	text-decoration: none;
+	outline: none;
+}
 a, button { transition: all 0.3s ease; }
 a:hover,
 a:focus {
