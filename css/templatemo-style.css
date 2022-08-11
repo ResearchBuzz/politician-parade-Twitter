@@ -163,8 +163,9 @@ textarea:-ms-input-placeholder {
 
 	.tm-left-column { 
 		 
-		height: 900px;
+		height: 100%;
 		position: fixed;
+		overflow: scroll;
 	}
 
 	.container { width: 100%; }
