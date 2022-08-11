@@ -75,7 +75,7 @@ p { line-height: 2; }
 	color: white;
 }
 
-.tm-nav-item:hover a,
+.tm-nav-item:link a,
 .tm-nav-item:active a,
 .tm-nav-item:focus a,
 .tm-nav-item-link.active {
