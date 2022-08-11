@@ -1,21 +1,130 @@
+<!DOCTYPE html>
 <html>
-<head><title>Search Congressional Representatives In TwitterSpace</title></head>
-<body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h2>Search Congressional Representatives In TwitterSpace</h2>
+    <title>ResearchBuzz Search Gizmos</title>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
 
-<h3>
-  Enter the Twitter query you want to do and the state you're interested in. This tool will generate a search of that state's congressional representative Twitter space.  </h3>
-  
-   <label>Query:</label>
-  <input type="text" class="searchq" value="Medicare"><br><br>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column">                        
+                        <div class="tm-logo-div text-xs-center">
+                            <img src="img/tm-neaty-logo.png" alt="ResearchBuzz Logo">
+                            <h2 class="tm-site-name">RB Search Gizmos</h2>
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/politician-parade-Twitter/" class="tm-nav-item-link">Politician Parade: Twitter</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/politician-parade/" class="tm-nav-item-link">Politican Parade: Google News</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/Time-Sliced-News-Search/" class="tm-nav-item-link">Time-Sliced News Search</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/Kebberfegg/" class="tm-nav-item-link">Kebberfegg RSS Feed Generator</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/blogspace-time-machine/" class="tm-nav-item-link">Blogspace Time Machine</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/Blog-Shovel/" class="tm-nav-item-link">Blog Shovel</a>
+                                </li>
+
+ <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/sinker-search/" class="tm-nav-item-link">Sinker Search</a>
+                                </li>
+
+ <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/The-Anti-Bullseye-Name-Search/" class="tm-nav-item-link">The Anti-Bullseye Name Search</a>
+                                </li>
+
+ <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/Back-That-Ask-Up-/" class="tm-nav-item-link">Back That Ask Up</a>
+                                </li>
+
+ <li class="tm-nav-item">
+                                    <a href="https://researchbuzz.github.io/Twitter-Receipts/" class="tm-nav-item-link">Twitter Receipts</a>
+                                </li>
+
+
+
+ <li class="tm-nav-item">
+                                    <a href="http://www.researchbuzz.me" class="tm-nav-item-link">Brought to You By ResearchBuzz</a>
+                                </li>
+
+
+
+
+                            </ul>
+                        </nav>                                         
+                    </div> <!-- Left column: logo and menu -->
+
+
+
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                        <figure>
+                            <img src="img/neaty-01.jpg" alt="Header image" class="img-fluid">    
+                        </figure>
+
+                        <div class="tm-content-div">
+
+
+
+                            <!-- Content Section: Introduction-->
+                            <section id="welcome" class="tm-section">
+                                <header>
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">RB Search Gizmos: Politician Parade (Twitter)</h2>
+                                </header>
+                                <p>Introduction to the gizmo</p>
+
+                            </section>
+
+
+                            <!-- About section -->
+                            <section id="about" class="tm-section">
+                                <div class="row">                                                                
+                                 
+        <header>
+                                            <h2 class="tm-blue-text tm-section-title tm-margin-b-45">Try It Out!</h2>
+                                        </header>
+                                        
+
+
+  <label>Query:</label>
+  <input type="text" class="searchq" value="minimum wage"><br><br>
 
   <label>State: (Please use two-letter postal code)</label>
-  <input type="text" class="state" size="2" maxlength="2" value="IA"><br><br>
+  <input type="text" class="state" size="2" maxlength="2" value="CA"><br><br>
 
   <label>ProPublica API Key</label><br><br>
   <i>You'll need an API Key to use this tool. You can get them free from https://www.propublica.org/datastore/api/propublica-congress-api .</i><br><br>
-  <input type="text" class="apikey" value="please paste your key here"><br><br>
+  <input type="text" class="apikey" value="bvsqpoZ3uMtssGByPJz3CkYEi5EjA51jXNmYBgHA"><br><br>
 
 <button onclick="Parade()">Parade them Politicians!</button><br><br>
 
@@ -31,8 +140,89 @@
 
 </div>
 
+                          
 
-<script>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pull-lg-8 pull-md-7 tm-about-img-container">
+                                           
+                                    </div>  
+                                </div>                            
+                            </section>  
+
+                          
+
+                            <footer>
+                                <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2017</span> ResearchBuzz 
+                                
+                                | Designed by <a href="http://www.templatemo.com" target="_parent">templatemo</a></p>
+                            </footer>
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script>     
+       
+            $(document).ready(function(){
+
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 20
+                });
+
+                // Magnific pop up
+                $('.tm-gallery-1').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-2').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-3').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-current-year').text(new Date().getFullYear());                
+            });
 
 function Parade(){
 
@@ -47,8 +237,7 @@ function Parade(){
 
     var api_url = "https://api.propublica.org/congress/v1/members/house/"+state+"/current.json"
      
-    var search_url = "https://twitter.com/search?f=live&q="+searchq+"+"
-
+    var search_url = "https://www.google.com/search?tbm=nws&q="+searchq+"+"
 
     // Empty arrays for processing API data
     let mapdata = {}
@@ -71,20 +260,16 @@ function Parade(){
    let Rpols = []
    let Dpols = []
    let Bpols = []
-   let twitterhandles = []
 
 while (loopstart < looplimit) {
 
-var polname = mapdata.results[loopstart].twitter_id
-polname = "from:"+polname
+var polname = mapdata.results[loopstart].name
+polname = "\""+polname+"\""
 polname = encodeURI(polname)
 console.log(polname) 
 var polparty = mapdata.results[loopstart].party
 console.log(polparty)
 Bpols.push(polname)
-var twitter = mapdata.results[loopstart].twitter_id
-console.log(twitter)
-twitterhandles.push(twitter)
 
 // Push to the specific party array 
 
@@ -113,14 +298,14 @@ const result = new Array(Math.ceil(Bitems.length / n))
   console.log(resultlength)
   resultstart = 0
 var Bdiv = document.getElementById("Bpol")
-Bdiv.innerHTML = "<h4>TwitterSpace search for representatives from both parties:</h4>"  
+Bdiv.innerHTML = "<h4>News search for representatives from both parties:</h4>"  
 while (resultstart < resultlength) {
 var BitemsString = result[resultstart]
-var BitemsURL = BitemsString.join("%20OR%20")
+var BitemsURL = BitemsString.join(" | ")
 var BitemsURL = "("+BitemsURL+")"
 var resultsm = resultstart+1
 var BitemsQ = search_url+BitemsURL
-var BitemsQCount = "TwitterSpace - Congressional Rep Group"+resultsm+"  (click to open or right-click to open in new tab) <br>"
+var BitemsQCount = "Google News - Congressional Rep Group"+resultsm+"  (click to open or right-click to open in new tab) <br>"
 var BitemsQ = BitemsQCount.link(BitemsQ)
 console.log(BitemsQ)
 
@@ -145,7 +330,7 @@ const dresult = new Array(Math.ceil(Ditems.length / o))
   
 while (resultstart < dresultlength) {
 var ditemsString = dresult[resultstart]
-var ditemsURL = ditemsString.join("%20OR%20")
+var ditemsURL = ditemsString.join(" | ")
 console.log(ditemsURL)
 var ditemsURL = "("+ditemsURL+")"
 var ditemsQ = search_url+ditemsURL
@@ -169,7 +354,7 @@ const rresult = new Array(Math.ceil(ritems.length / o))
   
 while (resultstart < rresultlength) {
 var ritemsString = rresult[resultstart]
-var ritemsURL = ritemsString.join("%20OR%20")
+var ritemsURL = ritemsString.join(" | ")
 console.log(ritemsURL)
 var ritemsURL = "("+ritemsURL+")"
 var ritemsQ = search_url+ritemsURL
@@ -181,12 +366,9 @@ resultstart++
 })
 
 
-
     
     }
-</script>
-  
-  
-  
+
+        </script>             
 </body>
 </html>
